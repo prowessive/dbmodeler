@@ -1,0 +1,7 @@
+<mat-grid-list cols="3" rowHeight="50px">
+  @for (tile of tiles; track tile) {
+    <mat-grid-tile>
+      <mat-icon aria-hidden="false" aria-label={{tile.label} fontIcon={{tile.icon}}></mat-icon>
+    </mat-grid-tile>
+  }
+</mat-grid-list>

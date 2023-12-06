@@ -1,0 +1,17 @@
+mat-grid-tile {
+    padding: 5px;
+}
+app-toolbar {
+    height: 100px;
+    width: 100%;
+}
+
+app-side-toolbar{
+    height: 100%;
+    width: 100%;
+}
+
+app-tab-group{
+    height: 100%;
+    width: 100%;
+}
