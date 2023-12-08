@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 
+export interface Tile {
+  label: string;
+  icon: string;
+}
+
+
+
 @Component({
   selector: 'app-side-toolbar',
   templateUrl: './side-toolbar.component.html',
@@ -11,7 +18,7 @@ import {MatIconModule} from '@angular/material/icon';
 
 })
 export class SideToolbarComponent {
-  tiles = [
+  tiles: Tile[] = [
     {label: 'table', icon:'table_chart'},
     {label: 'relation', icon: 'arrow_right_alt'}
   ];

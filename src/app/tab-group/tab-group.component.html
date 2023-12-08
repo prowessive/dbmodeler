@@ -1,4 +1,6 @@
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-    <mat-tab label="Model 1">Model 1</mat-tab>
+  @for (model of models; track model) {
+    <mat-tab label={{model.label}}>{{model.name}}</mat-tab>
+  }
   </mat-tab-group>
   
